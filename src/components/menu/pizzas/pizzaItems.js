@@ -1,24 +1,33 @@
-import React from "react";
+import React, { Component } from "react";
 
-function PizzaItem(props) {
-  return (
-    <div className="PizzaItem">
-      <img
-        style={{ width: 250, height: 250 }}
-        alt={props.item.type}
-        src={props.item.image}
-      />
-      <p className="PizzaName">{props.item.type}</p>
-      <select className="size" name="size" id={props.item.id}>
-        <option>Small: £{props.item.prices.small}</option>
-        <option>Medium: £{props.item.prices.medium}</option>
-        <option>Large: £{props.item.prices.large}</option>
-        <option>Extra Large: £{props.item.prices.extra_large}</option>
-      </select>
+class PizzaItem extends Component {
+  constructor() {
+    super();
+    this.state = {
+      value: "",
+    };
+  }
 
-      <button className="order">Add</button>
-    </div>
-  );
+  render() {
+    return (
+      <div className="PizzaItem">
+        <img
+          style={{ width: 250, height: 250 }}
+          alt={this.props.item.type}
+          src={this.props.item.image}
+        />
+        <p className="PizzaName">{this.props.item.type}</p>
+        <select className="size" name="size" id={this.props.item.id}>
+          <option>Small: £{this.props.item.prices.small}</option>
+          <option>Medium: £{this.props.item.prices.medium}</option>
+          <option>Large: £{this.props.item.prices.large}</option>
+          <option>Extra Large: £{this.props.item.prices.extra_large}</option>
+        </select>
+
+        <button className="order">Add</button>
+      </div>
+    );
+  }
 }
 
 export default PizzaItem;
