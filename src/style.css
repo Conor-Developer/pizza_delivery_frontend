@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 0 200px;
+  background-color: rgb(57, 51, 54);
+}
+
+.header-image {
+  display: flex;
+  justify-content: center;
+  padding: 0 200px;
+}
+
+#pizza-logo {
+  max-width: 500px;
+  max-height: 200px;
+  padding: 15px;
+  padding-bottom: 0px;
+}
+
+.title {
+  color: white;
+  padding: 60px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PizzaItem {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid grey;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.PizzaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid blue;
+  justify-content: center;
+  padding-left: 300px;
+  padding-right: 300px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLaSCusKIu4Zbnqmyd2abRY4gFbmRR1-x0sA&usqp=CAU");
+}
+
+.size {
+  margin: 10px;
+  width: 150px;
+  height: 25px;
+  font-size: 20px;
+}
+
+.order {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(65, 169, 52);
+  border-radius: 18px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 2px;
+}
+
+.PizzaName {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+  background-color: rgb(0, 100, 145);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.FooterInformation {
+  margin: 5px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
