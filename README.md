@@ -13,7 +13,6 @@ To provide an online ordering tool to allow customers to place orders at their f
 ## Tech stack
 
 - [React](https://reactjs.org/) for front end devlepment.
-- [Trello](https://trello.com) for agile development.
 - [Github](https://github.com/) and Git for version control.
 
 ## Features
