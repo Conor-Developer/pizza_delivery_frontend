@@ -4,6 +4,7 @@ class PizzaItem extends Component {
   constructor() {
     super();
     this.state = {
+      id: "",
       type: "",
       price: "",
     };
@@ -13,11 +14,13 @@ class PizzaItem extends Component {
   handleChange(event) {
     const getKeyByValue = (event) => {
       return Object.keys(this.props.item.prices).filter(
+        // eslint-disable-next-line
         (element) => this.props.item.prices[element] == event
       );
     };
 
     this.setState({
+      id: this.props.item.id,
       type: this.props.item.type,
       price: event.target.value,
       size: getKeyByValue(event.target.value),
@@ -38,8 +41,10 @@ class PizzaItem extends Component {
           className="size"
           id={this.props.item.id}
           onChange={this.handleChange}
-          defaultValue={this.props.item.prices.small}
         >
+          <option value={"none"} default selected hidden>
+            Choose a size
+          </option>
           <option value={this.props.item.prices.small}>
             Small: £{this.props.item.prices.small}
           </option>
@@ -53,7 +58,9 @@ class PizzaItem extends Component {
             Extra Large: £{this.props.item.prices.extra_large}
           </option>
         </select>
-        <button onClick={() => this.props.onAdd(this.state)}>Add</button>
+        <button className="add" onClick={() => this.props.onAdd(this.state)}>
+          Add
+        </button>
       </div>
     );
   }

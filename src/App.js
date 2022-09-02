@@ -46,8 +46,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Basket onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
-      <Pizza onAdd={onAdd} />
+      <div className="main">
+        <Pizza onAdd={onAdd} />
+        <Basket onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
+      </div>
       <Footer />
     </div>
   );
