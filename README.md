@@ -1,5 +1,7 @@
 # Pizza
 
+Note: You can find the backend codebase for this project [here](https://github.com/Conor-Developer/pizza_delivery_backend)
+
 ## Reflection
 
 In this project, I further expanded my skills with React. I was able to build a shopping basket function that allows the user to add items to their cart, view costs and amend quantitis.
@@ -10,7 +12,7 @@ To provide an online ordering tool to allow customers to place orders at their f
 
 ## Tech stack
 
-- [React] (https://reactjs.org/) for front end devlepment.
+- [React](https://reactjs.org/) for front end devlepment.
 - [Trello](https://trello.com) for agile development.
 - [Github](https://github.com/) and Git for version control.
 
