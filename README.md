@@ -21,7 +21,7 @@ To provide an online ordering tool to allow customers to place orders at their f
 - Users can add food items to a basket
 - Users can adjust quantity of each food item in food basket
 - Users can remove food items from the food basket
-- Users can review sub total, additional fees and total price
+- Users can review subtotal, additional fees and total price
 
 ## Getting started
 
