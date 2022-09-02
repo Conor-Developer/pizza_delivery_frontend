@@ -122,6 +122,18 @@ body {
   margin: 2px;
 }
 
+.addItem {
+  width: 80px;
+  height: 30px;
+  font-size: 20px;
+  background-color: rgb(65, 169, 52);
+  border-radius: 18px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin: 2px;
+}
+
 .remove {
   width: 30px;
   height: 30px;

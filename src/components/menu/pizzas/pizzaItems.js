@@ -58,7 +58,10 @@ class PizzaItem extends Component {
             Extra Large: £{this.props.item.prices.extra_large}
           </option>
         </select>
-        <button className="add" onClick={() => this.props.onAdd(this.state)}>
+        <button
+          className="addItem"
+          onClick={() => this.props.onAdd(this.state)}
+        >
           Add
         </button>
       </div>
