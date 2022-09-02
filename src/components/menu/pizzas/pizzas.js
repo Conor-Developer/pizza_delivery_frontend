@@ -24,7 +24,7 @@ class Pizza extends Component {
 
   render() {
     const pizzaItems = this.state.pizza.map((item) => (
-      <PizzaItem key={item?.id} item={item} />
+      <PizzaItem key={item?.id} item={item} onAdd={this.props.onAdd} />
     ));
     return <div className="PizzaContainer">{pizzaItems}</div>;
   }
