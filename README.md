@@ -42,6 +42,6 @@ To explore the codebase follow this set-up:
 
 1. Start the server
    ```
-   npm start
+   npm run start
    ```
 2. Browse to [http://localhost:3000](http://localhost:3000)
